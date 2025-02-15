@@ -1,5 +1,9 @@
 # Find the Cost of Tiles to Cover W x H Floor
-This is a Python implementation for a program that obtains the cost of tiles required to cover a floor based on the dimensions provided by the user.
+This is a Python implementation for a program that obtains the cost of tiles required to cover a floor based on the dimensions provided by the user. The cost per square unit must be entered with a currency symbol at the beginning. Moreover, the width and height must be entered with the same units of length. The program currently supports the following units of length:
+- meters (m)
+- centimeters (cm)
+- millimeters (mm)
+- inches (in or '')
 
 This program requires Python 3 which can be installed from [here](https://www.python.org/downloads/).
 
