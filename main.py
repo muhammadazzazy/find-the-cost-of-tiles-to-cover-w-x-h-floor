@@ -27,10 +27,19 @@ def main() -> None:
 
             user_input = input('Enter the width of a tile: ')
 
-            if user_input[-2:] == 'cm' or user_input[-2:] == 'mm' or user_input[-2:] == '\'\'' or user_input[-2:] == 'in':
+            is_unit_cm: bool = user_input[-2:] == 'cm'
+            is_unit_mm: bool = user_input[-2:] == 'mm'
+            is_unit_in: bool = user_input[-2:
+                                          ] == "''" or user_input[-2:] == 'in'
+            requirements: list[bool] = [is_unit_cm, is_unit_mm, is_unit_in]
+
+            is_unit_m: bool = user_input[-1:] == 'm'
+
+            if any(requirements):
                 width: float = float(user_input[:-2])
                 length_unit: str = user_input[-2:]
-            elif user_input[-1] == 'm':
+
+            elif is_unit_m:
                 width: float = float(user_input[:-1])
                 length_unit: str = user_input[-1]
             else:
