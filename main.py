@@ -65,7 +65,7 @@ def main() -> None:
 
             total_cost: float = cost_per_square * width * height
 
-            print(f'Total cost = {currency_symbol}{total_cost:.2f}')
+            print(f'Total cost = {currency_symbol}{total_cost:,.2f}')
 
         except ValueError:
             print('Please enter valid input...')
